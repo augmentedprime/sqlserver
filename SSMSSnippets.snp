@@ -1,0 +1,394 @@
+﻿<ExportedSQLSnippets><Snippet><SnippetShortcut>SSF</SnippetShortcut><SnippetText>SELECT *
+FROM 
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>RWN</SnippetShortcut><SnippetText>ROW_NUMBER() OVER(PARTITION BY &lt;&gt; ORDER BY &lt;&gt; )</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>INS</SnippetShortcut><SnippetText>INSERT INTO &lt;&gt;()
+VALUES (&lt;&gt;)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>UPD</SnippetShortcut><SnippetText>UPDATE
+SET 
+FROM</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SSC</SnippetShortcut><SnippetText>SELECT  COUNT(*)
+FROM    </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SST</SnippetShortcut><SnippetText>SELECT  TOP 10 *
+FROM    </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>DT</SnippetShortcut><SnippetText>DROP TABLE </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>DE</SnippetShortcut><SnippetText>DELETE </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>S</SnippetShortcut><SnippetText>SELECT </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>F</SnippetShortcut><SnippetText>FROM </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>UP</SnippetShortcut><SnippetText>UPDATE dbo.</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>IN</SnippetShortcut><SnippetText>INSERT </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>W</SnippetShortcut><SnippetText>WHERE </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>GB</SnippetShortcut><SnippetText>GROUP BY </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>OB</SnippetShortcut><SnippetText>ORDER BY </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>HA</SnippetShortcut><SnippetText>HAVING </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CR</SnippetShortcut><SnippetText>CREATE</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRT</SnippetShortcut><SnippetText>CREATE TABLE 
+(
+    
+)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRTI</SnippetShortcut><SnippetText>CREATE TABLE 
+(
+    ID INT IDENTITY(1,1),
+    
+)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRTU</SnippetShortcut><SnippetText>CREATE TABLE 
+(
+    ID UNIQUEIDENTIFIER,
+    
+)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRTV</SnippetShortcut><SnippetText>DECLARE @tbl TABLE
+(
+    
+)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRTT</SnippetShortcut><SnippetText>CREATE TABLE #temp
+(
+    
+)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRCI</SnippetShortcut><SnippetText>CREATE CLUSTERED INDEX CI_ ON</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRNCI</SnippetShortcut><SnippetText>CREATE NONCLUSTERED INDEX CI_ ON</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRUNQ</SnippetShortcut><SnippetText>CREATE UNIQUE INDEX UNQ_ ON </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CRCHK</SnippetShortcut><SnippetText>ALTER TABLE ... ADD CONSTRAINT CHK_ CHECK </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>EX</SnippetShortcut><SnippetText>EXISTS </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>NEX</SnippetShortcut><SnippetText>NOT EXISTS </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>WTF</SnippetShortcut><SnippetText>WTF???!??!  AAAAAARRRRRRRRRRGGGGGGGGHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>TT</SnippetShortcut><SnippetText>TRUNCATE TABLE </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>EX</SnippetShortcut><SnippetText>EXECUTE </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>JO</SnippetShortcut><SnippetText>JOIN </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>RJ</SnippetShortcut><SnippetText>RIGHT JOIN </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>LJ</SnippetShortcut><SnippetText>LEFT JOIN</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>FJ</SnippetShortcut><SnippetText>FULL JOIN</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CJ</SnippetShortcut><SnippetText>CROSS JOIN </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>OA</SnippetShortcut><SnippetText>OUTER APPLY </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CA</SnippetShortcut><SnippetText>CROSS APPLY </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>INI</SnippetShortcut><SnippetText>INSERT INTO dbo.</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>AJ</SnippetShortcut><SnippetText>EXEC GLOBAL.dbadmin.AgentJobInfo 
+	@jobname = 'GVSI_{C}'
+	,@include_history = 1
+	--,@step_info = 1
+	--,@verbose = 1</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>reporttableentry</SnippetShortcut><SnippetText>INSERT INTO GLOBAL.dbo.Report (ReportName, To_EmailAddresses, From_EmailAddresses, From_Name, [Subject], ReplyTo_EmailAddresses, [Priority], EmailType, [Server], ReportType)
+VALUES ('{your report name from email proc}', '{your personal company email address}', 'DL-DataServices', 'GVSI Data Factory', '{email subject line, usually database name or description}', 'DL-DataServices@gvsi.com', 'Normal', 'TextPlain', 'mail.gvsi.com', 1)
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SSFHD</SnippetShortcut><SnippetText>SELECT *
+FROM dbo.history
+ORDER BY dateCreated DESC
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SDF</SnippetShortcut><SnippetText>SELECT DISTINCT 
+FROM 	dbo.{C}
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SDDFH</SnippetShortcut><SnippetText>SELECT DISTINCT dateCreated
+FROM dbo.History
+ORDER BY dateCreated DESC
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>STSF</SnippetShortcut><SnippetText>SELECT TOP 10000 *
+FROM dbo.{C}</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>RIGDATA</SnippetShortcut><SnippetText>USE [RigData]
+GO
+
+ select * from Operator_Xref WHERE Operator_Name is null
+
+select * from Operator_Xref WHERE Operator LIKE '%%'
+
+
+
+UPDATE dbo.Operator_Xref
+SET Operator_Name = ''
+WHERE Operator_Name IS NULL AND Operator = ''
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>HERENUPDATEDATAUSED</SnippetShortcut><SnippetText>UPDATE
+	C
+SET
+	C.newData = 1,
+	C.dateUpdated = GETDATE(),
+	C.value = CONVERT(FLOAT,A.value),
+	C.dataused = A.dataUsed
+FROM
+	Forwards_Stage A
+INNER JOIN
+	Forwards_Metadata B
+ON
+	A.code = B.code
+INNER JOIN
+	Forwards_History C
+ON
+	C.symbolID = B.symbolID
+AND
+	C.tradeDate = A.tradeDate
+WHERE
+	CONVERT(FLOAT,A.value) &lt;&gt; C.value
+	OR (A.dataUsed IS NOT NULL AND A.dataUsed &lt;&gt; '' AND C.dataUsed IS NULL)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>FINDSYMBOL</SnippetShortcut><SnippetText>USE [MVProdPerm2]
+GO 
+
+DECLARE
+
+	@symbol			VARCHAR(200) = '#{C}',  /*** &lt;---- This is the only value you need to modify.   ***/
+	@database		VARCHAR(200),
+	@exchangeCode	VARCHAR(200) 
+	
+BEGIN
+	SELECT *
+	FROM [MVProdPerm2].[dbo].[SYMBOL]
+	WHERE SYMBOL = @symbol
+
+	SELECT @database = dbName, @exchangeCode = EXCHANGE_CODE
+	FROM [MVProdPerm2].[dbo].[SYMBOL]
+	WHERE SYMBOL = @symbol
+
+	SELECT @database, @exchangeCode
+
+	
+	IF @database IS NULL AND @exchangeCode IS NOT NULL
+	BEGIN
+		SELECT @database = ETL_SOURCE
+		FROM dbo.EXCHANGE
+		WHERE EXCHANGE_CODE = @exchangeCode
+	END
+	IF @database IS NOT NULL
+	BEGIN
+		IF (SELECT COUNT(*) FROM [SCHTMD01].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHTMD01' AS [Exists On]
+	
+		IF (SELECT COUNT(*) FROM [SCHPSQL3].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHPSQL3' AS [Exists On]
+
+		IF (SELECT COUNT(*) FROM [SCHPSQL4].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHPSQL4' AS [Exists On]
+
+		IF (SELECT COUNT(*) FROM [SCHPSQL5].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHPSQL5' AS [Exists On]
+
+		IF (SELECT COUNT(*) FROM [SCHPSQL6].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHPSQL6' AS [Exists On]
+
+		--IF (SELECT COUNT(*) FROM [SCHPSQL7].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+		--	SELECT @database AS [Database], 'SCHPSQL7' AS [Exists On]
+	
+		--IF (SELECT COUNT(*) FROM [SCHPSQL8].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+		--	SELECT @database AS [Database], 'SCHPSQL8' AS [Exists On]
+
+		IF (SELECT COUNT(*) FROM [SCHPSQL9].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHPSQL9' AS [Exists On]
+
+		IF (SELECT COUNT(*) FROM [SCHPSQL11].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHPSQL11' AS [Exists On]
+
+		IF (SELECT COUNT(*) FROM [SCHPSQL12].[master].[sys].[databases] WHERE [name] = @database) &gt; 0
+			SELECT @database AS [Database], 'SCHPSQL12' AS [Exists On]
+	END
+	ELSE
+		SELECT 'Database name is NULL' AS [Error]
+
+END
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SSFHJM</SnippetShortcut><SnippetText>SELECT *
+FROM dbo.history h
+JOIN MetaData m
+ON h.symbolID = m.symbolID
+ORDER BY h.dateCreated DESC
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>CLEARSYMBOL</SnippetShortcut><SnippetText>DECLARE @willDelete		BIT = 0
+
+/*** SCHETLB or Production Server ****************************************************************************************/
+
+--use replace all on symbol names. 
+--Note that this uses IN so you can delete multiple symbols at the same time if necessary
+
+IF @willDelete = 1
+BEGIN
+	DELETE [DSPerms].[dbo].[QA]
+	WHERE [EXCHANGE_CODE] IN ('')
+END
+
+SELECT * FROM [DSPerms].[dbo].[QA]
+WHERE [EXCHANGE_CODE] IN ('')
+
+IF @willDelete = 1
+BEGIN
+	DELETE [DSPerms].[dbo].[TREE_QA]
+    WHERE [exchange_code] IN ('')
+END
+
+SELECT * FROM [DSPerms].[dbo].[TREE_QA]
+WHERE [exchange_code] IN ('')
+
+IF @willDelete = 1
+BEGIN
+	DELETE [DSPerms].[dbo].[IM_QA]
+	WHERE [exchangeCode] IN ('')
+END
+
+SELECT * FROM [DSPerms].[dbo].[IM_QA]
+WHERE [exchangeCode] IN ('')
+
+IF @willDelete = 1
+BEGIN
+	DELETE [DSPerms].[dbo].[PROD]
+	WHERE [EXCHANGE_CODE] IN ('')
+END
+
+SELECT * FROM [DSPerms].[dbo].[PROD]
+WHERE [EXCHANGE_CODE] IN ('')
+
+IF @willDelete = 1
+BEGIN
+	DELETE [DSPerms].[dbo].[TREE_PROD]
+    WHERE [exchange_code] IN ('')
+END
+
+SELECT * FROM [DSPerms].[dbo].[TREE_PROD]
+WHERE [exchange_code] IN ('')
+
+IF @willDelete = 1
+BEGIN
+	DELETE [DSPerms].[dbo].[IM_PROD]
+	WHERE [exchangeCode] IN ('')
+END
+
+SELECT * FROM [DSPerms].[dbo].[IM_PROD]
+WHERE [exchangeCode] IN ('')
+
+/*** PERMS **************************************************************************************************************/
+-- PERMS_C02
+-- SCHTSQLA
+IF @willDelete = 1
+BEGIN
+	DELETE SCHTSQLA.[MVProdPerm2].[dbo].[st_tree]
+    WHERE [exchange_code] IN ('')
+END
+                       
+SELECT * FROM SCHTSQLA.[MVProdPerm2].[dbo].[st_tree] WITH (NOLOCK)
+WHERE [EXCHANGE_CODE] IN ('')
+
+IF @willDelete = 1
+BEGIN
+	DELETE SCHTSQLA.[MVProdPerm2].[dbo].[SYMBOL]
+    WHERE [EXCHANGE_CODE] IN ('')
+END
+
+SELECT * FROM SCHTSQLA.[MVProdPerm2].[dbo].[SYMBOL] WITH (NOLOCK)
+WHERE [EXCHANGE_CODE] IN ('')
+
+
+IF @willDelete = 1
+BEGIN
+	DELETE SCHTSQLA.[mvprodperm2].[dbo].[instrument_metadata]
+	WHERE [exchangeCode] IN ('') AND instrumentType = 'SF'
+END
+
+SELECT * FROM SCHTSQLA.[mvprodperm2].[dbo].[instrument_metadata]
+WHERE [exchangeCode] IN ('') 
+--AND instrumentType = 'SF'
+ 
+ /*
+  	-- If entry in [SYMBOL] comes back null where it can be found elsewhere, check for a backlog of files here:  \\PERMS\DataEX\Symbols
+*/
+
+
+--UPDATE [DSPerms].[dbo].[QA]
+--SET newSymbol = 1
+--WHERE [EXCHANGE_CODE] IN ('')
+
+
+--SELECT * FROM [DSPerms].[dbo].[QA]
+--WHERE [EXCHANGE_CODE] IN ('')
+
+--UPDATE DSPerms..TREE_PROD
+--SET newTree = 1
+--WHERE exchange_code = ''</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>com</SnippetShortcut><SnippetText>/*
+{C}
+*/</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>WNL</SnippetShortcut><SnippetText>WITH (NOLOCK)</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>DI</SnippetShortcut><SnippetText>DISTINCT </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>BTCR</SnippetShortcut><SnippetText>/*
+COMMIT
+ROLLBACK
+{C}BEGIN TRAN
+SELECT @@TRANCOUNT AS TranCount
+*/</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SPREN</SnippetShortcut><SnippetText>EXEC sp_rename '{C}', ''</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>ESC</SnippetShortcut><SnippetText>[^{C}]</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SSFG</SnippetShortcut><SnippetText>SELECT *
+FROM GLOBAL.dbo.{C} WITH (NOLOCK)
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SSFDRD</SnippetShortcut><SnippetText>SELECT *
+FROM dbo.DataReportDetails</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>E</SnippetShortcut><SnippetText>EXEC </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>asdf</SnippetShortcut><SnippetText>{C}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>DRD</SnippetShortcut><SnippetText>SELECT *
+FROM dbo.DataReportDetails
+
+UPDATE dbo.DataReportDetails
+SET DataExpected = 10000
+WHERE DataReport &lt;&gt; 'Metadata'</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>COMM</SnippetShortcut><SnippetText>/*
+{C}
+*/</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>---</SnippetShortcut><SnippetText>------------------------------------------------------------------------------------------------------
+SELECT *
+FROM SCHTSQLA.MVProdperm2.dbo.Symbol WITH (NOLOCK)
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>SSFD</SnippetShortcut><SnippetText>SELECT * 
+FROM DSPerms.dbo.{C} WITH (NOLOCK)
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>DTIE</SnippetShortcut><SnippetText>DROP TABLE IF EXISTS </SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>gdmxtest</SnippetShortcut><SnippetText>INSERT INTO GDMXMetadata (
+	dataset,
+	MVSYMBOL,
+	MODELCD,
+	DEFAULT_PROFILE,
+	DEFAULT_VERSION,
+	DateCreated,
+	CATEGORY,
+	COMMODITY,
+	DELIVERYCD,
+	GDMX_PREFIX
+	)
+SELECT 
+	'test',
+	'#CCIAPIBAHS',
+	'test',
+	'test',
+	'test',
+	GETUTCDATE(),
+	'test',
+	'test',
+	'test',
+	'test'
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>findserver</SnippetShortcut><SnippetText>
+;WITH CTE AS (
+	SELECT '%{C}%' AS dbName
+	)
+SELECT 'SCHPSQL3', *
+FROM SCHPSQL3.master.sys.databases d
+JOIN CTE c ON d.name LIKE c.dbName
+WHERE name LIKE dbName
+UNION
+SELECT 'SCHPSQL4', *
+FROM SCHPSQL4.master.sys.databases d
+JOIN CTE c ON d.name LIKE c.dbName
+WHERE name LIKE dbName
+UNION
+SELECT 'SCHPSQL5', *
+FROM SCHPSQL5.master.sys.databases d
+JOIN CTE c ON d.name LIKE c.dbName
+WHERE name LIKE dbName
+UNION
+SELECT 'SCHPSQL6', *
+FROM SCHPSQL6.master.sys.databases d
+JOIN CTE c ON d.name LIKE c.dbName
+WHERE name LIKE dbName
+UNION
+SELECT 'SCHPSQL9', *
+FROM SCHPSQL9.master.sys.databases d
+JOIN CTE c ON d.name LIKE c.dbName
+WHERE name LIKE dbName
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>dataissues</SnippetShortcut><SnippetText>
+DECLARE @dbName NVARCHAR(MAX) = '{C}'
+
+DROP TABLE IF EXISTS #serverDB
+SELECT 'SCHDETLB' AS serverName, *
+INTO #serverDB
+FROM SCHPSQL6.master.sys.databases
+WHERE name LIKE '%'+@dbName+'%'
+UNION
+SELECT 'SCHPSQL3', *
+FROM SCHPSQL3.master.sys.databases
+WHERE name LIKE '%'+@dbName+'%'
+UNION
+SELECT 'SCHPSQL4', *
+FROM SCHPSQL4.master.sys.databases
+WHERE name LIKE '%'+@dbName+'%'
+UNION
+SELECT 'schpsql5', *
+FROM SCHPSQL5.master.sys.databases
+WHERE name LIKE '%'+@dbName+'%'
+UNION
+SELECT 'SCHPSQL6', *
+FROM SCHPSQL6.master.sys.databases
+WHERE name LIKE '%'+@dbName+'%'
+UNION
+SELECT 'SCHPSQL9', *
+FROM SCHPSQL9.master.sys.databases
+WHERE name LIKE '%'+@dbName+'%'
+
+/*
+SELECT * FROM #serverDB
+*/
+
+DECLARE @query NVARCHAR(MAX) = ''
+SELECT @query = 
+	(CONCAT(@query,'
+	SELECT ''',name,''' AS dbName, ''',serverName,''' AS serverName, * 
+	FROM ',QUOTENAME(serverName),'.',QUOTENAME(name),'.dbo.DataReportDetails
+	')
+	) FROM #serverDB c
+	WHERE serverName &lt;&gt; 'SCHDETLB'
+
+PRINT @query
+EXEC sp_executesql @query
+
+</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>startjob</SnippetShortcut><SnippetText>EXEC msdb.dbo.sp_start_job @job_name = 'GVSI_{C}'</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>stopjob</SnippetShortcut><SnippetText>EXEC msdb.dbo.sp_stop_job @job_name = 'GVSI_{C}'</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>disablejob</SnippetShortcut><SnippetText>EXEC msdb.dbo.sp_update_job @job_name = 'GVSI_{C}', @enabled = 0</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>enablejob</SnippetShortcut><SnippetText>EXEC msdb.dbo.sp_update_job @job_name = 'GVSI_{C}', @enabled = 1</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>findjob</SnippetShortcut><SnippetText>SELECT * FROM msdb.dbo.sysjobs WHERE name LIKE '%{C}%'</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>recentdays</SnippetShortcut><SnippetText>DATEDIFF(DAY,GETDATE(),tradeDate) &lt; 10{C}</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>LW</SnippetShortcut><SnippetText>LIKE '%{C}%'</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet><Snippet><SnippetShortcut>openquery</SnippetShortcut><SnippetText>DROP TABLE IF EXISTS #Temp 
+SELECT *
+INTO #Temp 
+FROM OPENQUERY(SCHPSQL4, 'EXEC DBName.dbo.ProcedureName @args = value')</SnippetText><SnippetIgnoreCase>True</SnippetIgnoreCase></Snippet></ExportedSQLSnippets>
