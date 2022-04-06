@@ -1,0 +1,579 @@
+    "datasource.connectionGroups": [
+        {
+            "name": "Dev",
+            "id": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+            "parentId": "C777F06B-202E-4480-B475-FA416154D458",
+            "color": "#4452A6",
+            "description": ""
+        },
+        {
+            "name": "Prod",
+            "id": "8f92b759-62e1-4060-8eca-97c167457b1f",
+            "parentId": "C777F06B-202E-4480-B475-FA416154D458",
+            "color": "#7F0000",
+            "description": ""
+        },
+        {
+            "name": "ROOT",
+            "id": "C777F06B-202E-4480-B475-FA416154D458",
+            "color": "#7F0000",
+            "description": ""
+        },
+        {
+            "name": "ETL",
+            "id": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "parentId": "8f92b759-62e1-4060-8eca-97c167457b1f",
+            "color": "#7F0000",
+            "description": ""
+        },
+        {
+            "name": "Perms",
+            "id": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "parentId": "8f92b759-62e1-4060-8eca-97c167457b1f",
+            "color": "#7F0000",
+            "description": ""
+        },
+        {
+            "name": "MD",
+            "id": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "parentId": "8f92b759-62e1-4060-8eca-97c167457b1f",
+            "color": "#7F0000",
+            "description": ""
+        },
+        {
+            "name": "Reports",
+            "id": "23d8ba8a-a877-4cf8-87aa-426a66776f43",
+            "parentId": "8f92b759-62e1-4060-8eca-97c167457b1f",
+            "color": "#7F0000",
+            "description": ""
+        }
+    ],
+    "datasource.connections": [
+        {
+            "options": {
+                "connectionName": "SCHPETL1 (VM)",
+                "server": "SCHPETL1",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "groupId": "8f92b759-62e1-4060-8eca-97c167457b1f",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "cf0fd9a2-934f-4e7f-8586-cbcd4374734e"
+        },
+        {
+            "options": {
+                "connectionName": "SCHDETLB (ETL)",
+                "server": "SCHDETLB",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+                "databaseDisplayName": ""
+            },
+            "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "8f3ca87f-6fce-4ae3-ae5e-30bcd597a892"
+        },
+        {
+            "options": {
+                "connectionName": "V01QGVPERMS01 (Perms)",
+                "server": "V01QGVPERMS01",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+                "databaseDisplayName": ""
+            },
+            "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "6900425b-2ac2-47f9-9013-d7bce4896f97"
+        },
+        {
+            "options": {
+                "connectionName": "SCHTMD01 (MD)",
+                "server": "SCHTMD01",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+                "databaseDisplayName": ""
+            },
+            "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "a54d6d1e-cd79-470c-a66f-b5f378daa040"
+        },
+        {
+            "options": {
+                "connectionName": "SCHTMD02 (MD)",
+                "server": "SCHTMD02",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+                "databaseDisplayName": ""
+            },
+            "groupId": "6c7c8a85-1793-4aa8-9753-0d98ccca2738",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "97973afb-ab8c-4006-a494-e655eb666e91"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPSQL3 (CH)",
+                "server": "SCHPSQL3",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "5badf0a0-2f9c-4a84-8ff9-6bdd4ae88465"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPSQL4 (CH)",
+                "server": "SCHPSQL4",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "bfa3e3cd-de1d-42f1-8dec-bcc04db9c0d4"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPSQL5 (CH)",
+                "server": "SCHPSQL5",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "c1b3cb4b-c2f5-4ee4-a020-7aea4e0e2f30"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPSQL6 (CH)",
+                "server": "SCHPSQL6",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "a373140b-6c2d-4b1d-8922-5eaa84125080"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPSQL3 (VA)",
+                "server": "SHOPSQL3",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "9515084c-9c6c-4804-b13c-fd6731ef4360"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPSQL4 (VA)",
+                "server": "SHOPSQL4",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "08327f60-2f5b-4297-862d-bb00589c46cc"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPSQL5 (VA)",
+                "server": "SHOPSQL5",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "a98459ec-fa4f-4785-9225-5e41ac8a987f"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPSQL6 (VA)",
+                "server": "SHOPSQL6",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9cdc28d0-a92e-4747-b3f5-097249f0c742",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "557a93f9-082e-48b0-83af-91ffd3084082"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPSQL9 (CH)",
+                "server": "SCHPSQL9",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "23d8ba8a-a877-4cf8-87aa-426a66776f43",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "f6af0bab-9e98-416f-9c69-906431aa33b4"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPSQL9 (VA)",
+                "server": "SHOPSQL9",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "23d8ba8a-a877-4cf8-87aa-426a66776f43",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "b9f37841-dc04-494f-a7cc-fa1b7e9ced5d"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPMD05 (CH)",
+                "server": "SCHPMD05",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "4a5adfcd-3c07-42b7-84c8-e604929a206f"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPMD06 (CH)",
+                "server": "SCHPMD06",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "de764a2c-2988-41e2-9d02-f66b4c582c20"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPMD07 (CH)",
+                "server": "SCHPMD07",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "f2746345-393d-436c-8468-e58dff376a7b"
+        },
+        {
+            "options": {
+                "connectionName": "SCHPMD08 (CH)",
+                "server": "SCHPMD08",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "46d11bab-dd19-42fc-a874-75ab4959f97b"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPMD05 (VA)",
+                "server": "SHOPMD05",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "53fe002c-7d00-4863-8792-032e221ec982"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPMD06 (VA)",
+                "server": "SHOPMD06",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "c422e989-84db-4e1e-a52c-5eba8c763278"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPMD07 (VA)",
+                "server": "SHOPMD07",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "1a0a0845-8b7d-4d39-8202-87348ef3837e"
+        },
+        {
+            "options": {
+                "connectionName": "SHOPMD08 (VA)",
+                "server": "SHOPMD08",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "9a55ac41-7176-4a61-87e1-1896e6136f19",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "6d4cd711-1b2e-4ff6-8ade-dcbe815e1737"
+        },
+        {
+            "options": {
+                "connectionName": "V01PGVPERMS01 (VM)",
+                "server": "V01PGVPERMS01",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "3b87229f-bf0d-4a59-b3c9-02f68f8996de"
+        },
+        {
+            "options": {
+                "connectionName": "V01PGVPERMS02 (VM)",
+                "server": "V01PGVPERMS02",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "53a722ed-3bc6-41fa-853d-abb2f3f778f6"
+        },
+        {
+            "options": {
+                "connectionName": "V01PGVPERMS03 (VM)",
+                "server": "V01PGVPERMS03",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "9b055ee1-feb1-4749-9e7c-5207451ea833"
+        },
+        {
+            "options": {
+                "connectionName": "V01PGVPERMS04 (VM)",
+                "server": "V01PGVPERMS04",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "ec664cad-d5b2-45ce-9524-3a105201d17f"
+        },
+        {
+            "options": {
+                "connectionName": "V02PGVPERMS01 (VM)",
+                "server": "V02PGVPERMS01",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "9978515a-593f-45a2-9b16-aeffe412a0c1"
+        },
+        {
+            "options": {
+                "connectionName": "V02PGVPERMS02 (VM)",
+                "server": "V02PGVPERMS02",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "535c5698-eb8e-40a5-90d9-34f963c3acba"
+        },
+        {
+            "options": {
+                "connectionName": "V02PGVPERMS03 (VM)",
+                "server": "V02PGVPERMS03",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "a341f404-3531-4023-b758-991eadb5dfc4"
+        },
+        {
+            "options": {
+                "connectionName": "V02PGVPERMS04 (VM)",
+                "server": "V02PGVPERMS04",
+                "database": "",
+                "authenticationType": "Integrated",
+                "user": "",
+                "password": "",
+                "applicationName": "azdata",
+                "azureTenantId": "61f90f11-8d76-4b05-9b09-90af7d07328a",
+                "databaseDisplayName": ""
+            },
+            "groupId": "104742d4-713f-40a8-985c-9d3e45f0b35e",
+            "providerName": "MSSQL",
+            "savePassword": true,
+            "id": "f7c06775-ac1f-42bb-9ef9-c46a9c799336"
+        }
+    ],

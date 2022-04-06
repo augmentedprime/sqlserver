@@ -1,0 +1,317 @@
+<html>
+	<table style="width:100%;">
+		<tr>
+			<td><h3>
+				<strong style="width:75px;">Shortcut</strong>
+			</h3></td><td><h3>
+				<strong style="width:60px;">A = a</strong>
+			</h3></td><td><h3>
+				<strong>Snippet Text</strong>
+			</h3></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">---</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				------------------------------------------------------------------------------------------------------<br />SELECT&nbsp;*<br />FROM&nbsp;SCHTSQLA.MVProdperm2.dbo.Symbol&nbsp;WITH&nbsp;(NOLOCK)<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">AJ</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXEC&nbsp;GLOBAL.dbadmin.AgentJobInfo&nbsp;<br />	@jobname&nbsp;=&nbsp;'GVSI_{C}'<br />	,@include_history&nbsp;=&nbsp;1<br />	--,@step_info&nbsp;=&nbsp;1<br />	--,@verbose&nbsp;=&nbsp;1
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">asdf</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				{C}<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">BTCR</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				/*<br />COMMIT<br />ROLLBACK<br />{C}BEGIN&nbsp;TRAN<br />SELECT&nbsp;@@TRANCOUNT&nbsp;AS&nbsp;TranCount<br />*/
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CA</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CROSS&nbsp;APPLY&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CJ</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CROSS&nbsp;JOIN&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CLEARSYMBOL</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DECLARE&nbsp;@willDelete		BIT&nbsp;=&nbsp;0<br /><br />/***&nbsp;SCHETLB&nbsp;or&nbsp;Production&nbsp;Server&nbsp;****************************************************************************************/<br /><br />--use&nbsp;replace&nbsp;all&nbsp;on&nbsp;symbol&nbsp;names.&nbsp;<br />--Note&nbsp;that&nbsp;this&nbsp;uses&nbsp;IN&nbsp;so&nbsp;you&nbsp;can&nbsp;delete&nbsp;multiple&nbsp;symbols&nbsp;at&nbsp;the&nbsp;same&nbsp;time&nbsp;if&nbsp;necessary<br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;[DSPerms].[dbo].[QA]<br />	WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;[DSPerms].[dbo].[QA]<br />WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;[DSPerms].[dbo].[TREE_QA]<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;[exchange_code]&nbsp;IN&nbsp;('')<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;[DSPerms].[dbo].[TREE_QA]<br />WHERE&nbsp;[exchange_code]&nbsp;IN&nbsp;('')<br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;[DSPerms].[dbo].[IM_QA]<br />	WHERE&nbsp;[exchangeCode]&nbsp;IN&nbsp;('')<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;[DSPerms].[dbo].[IM_QA]<br />WHERE&nbsp;[exchangeCode]&nbsp;IN&nbsp;('')<br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;[DSPerms].[dbo].[PROD]<br />	WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;[DSPerms].[dbo].[PROD]<br />WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;[DSPerms].[dbo].[TREE_PROD]<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;[exchange_code]&nbsp;IN&nbsp;('')<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;[DSPerms].[dbo].[TREE_PROD]<br />WHERE&nbsp;[exchange_code]&nbsp;IN&nbsp;('')<br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;[DSPerms].[dbo].[IM_PROD]<br />	WHERE&nbsp;[exchangeCode]&nbsp;IN&nbsp;('')<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;[DSPerms].[dbo].[IM_PROD]<br />WHERE&nbsp;[exchangeCode]&nbsp;IN&nbsp;('')<br /><br />/***&nbsp;PERMS&nbsp;**************************************************************************************************************/<br />--&nbsp;PERMS_C02<br />--&nbsp;SCHTSQLA<br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;SCHTSQLA.[MVProdPerm2].[dbo].[st_tree]<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;[exchange_code]&nbsp;IN&nbsp;('')<br />END<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />SELECT&nbsp;*&nbsp;FROM&nbsp;SCHTSQLA.[MVProdPerm2].[dbo].[st_tree]&nbsp;WITH&nbsp;(NOLOCK)<br />WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;SCHTSQLA.[MVProdPerm2].[dbo].[SYMBOL]<br />&nbsp;&nbsp;&nbsp;&nbsp;WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;SCHTSQLA.[MVProdPerm2].[dbo].[SYMBOL]&nbsp;WITH&nbsp;(NOLOCK)<br />WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br /><br /><br />IF&nbsp;@willDelete&nbsp;=&nbsp;1<br />BEGIN<br />	DELETE&nbsp;SCHTSQLA.[mvprodperm2].[dbo].[instrument_metadata]<br />	WHERE&nbsp;[exchangeCode]&nbsp;IN&nbsp;('')&nbsp;AND&nbsp;instrumentType&nbsp;=&nbsp;'SF'<br />END<br /><br />SELECT&nbsp;*&nbsp;FROM&nbsp;SCHTSQLA.[mvprodperm2].[dbo].[instrument_metadata]<br />WHERE&nbsp;[exchangeCode]&nbsp;IN&nbsp;('')&nbsp;<br />--AND&nbsp;instrumentType&nbsp;=&nbsp;'SF'<br />&nbsp;<br />&nbsp;/*<br />&nbsp;&nbsp;	--&nbsp;If&nbsp;entry&nbsp;in&nbsp;[SYMBOL]&nbsp;comes&nbsp;back&nbsp;null&nbsp;where&nbsp;it&nbsp;can&nbsp;be&nbsp;found&nbsp;elsewhere,&nbsp;check&nbsp;for&nbsp;a&nbsp;backlog&nbsp;of&nbsp;files&nbsp;here:&nbsp;&nbsp;\\PERMS\DataEX\Symbols<br />*/<br /><br /><br />--UPDATE&nbsp;[DSPerms].[dbo].[QA]<br />--SET&nbsp;newSymbol&nbsp;=&nbsp;1<br />--WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br /><br /><br />--SELECT&nbsp;*&nbsp;FROM&nbsp;[DSPerms].[dbo].[QA]<br />--WHERE&nbsp;[EXCHANGE_CODE]&nbsp;IN&nbsp;('')<br /><br />--UPDATE&nbsp;DSPerms..TREE_PROD<br />--SET&nbsp;newTree&nbsp;=&nbsp;1<br />--WHERE&nbsp;exchange_code&nbsp;=&nbsp;''
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">com</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				/*<br />{C}<br />*/
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">COMM</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				/*<br />{C}<br />*/
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CR</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRCHK</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				ALTER&nbsp;TABLE&nbsp;...&nbsp;ADD&nbsp;CONSTRAINT&nbsp;CHK_&nbsp;CHECK&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRCI</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE&nbsp;CLUSTERED&nbsp;INDEX&nbsp;CI_&nbsp;ON
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRNCI</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE&nbsp;NONCLUSTERED&nbsp;INDEX&nbsp;CI_&nbsp;ON
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRT</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE&nbsp;TABLE&nbsp;<br />(<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRTI</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE&nbsp;TABLE&nbsp;<br />(<br />&nbsp;&nbsp;&nbsp;&nbsp;ID&nbsp;INT&nbsp;IDENTITY(1,1),<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRTT</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE&nbsp;TABLE&nbsp;#temp<br />(<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRTU</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE&nbsp;TABLE&nbsp;<br />(<br />&nbsp;&nbsp;&nbsp;&nbsp;ID&nbsp;UNIQUEIDENTIFIER,<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRTV</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DECLARE&nbsp;@tbl&nbsp;TABLE<br />(<br />&nbsp;&nbsp;&nbsp;&nbsp;<br />)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">CRUNQ</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				CREATE&nbsp;UNIQUE&nbsp;INDEX&nbsp;UNQ_&nbsp;ON&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">dataissues</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				<br />DECLARE&nbsp;@dbName&nbsp;NVARCHAR(MAX)&nbsp;=&nbsp;'{C}'<br /><br />DROP&nbsp;TABLE&nbsp;IF&nbsp;EXISTS&nbsp;#serverDB<br />SELECT&nbsp;'SCHDETLB'&nbsp;AS&nbsp;serverName,&nbsp;*<br />INTO&nbsp;#serverDB<br />FROM&nbsp;SCHPSQL6.master.sys.databases<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;'%'+@dbName+'%'<br />UNION<br />SELECT&nbsp;'SCHPSQL3',&nbsp;*<br />FROM&nbsp;SCHPSQL3.master.sys.databases<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;'%'+@dbName+'%'<br />UNION<br />SELECT&nbsp;'SCHPSQL4',&nbsp;*<br />FROM&nbsp;SCHPSQL4.master.sys.databases<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;'%'+@dbName+'%'<br />UNION<br />SELECT&nbsp;'schpsql5',&nbsp;*<br />FROM&nbsp;SCHPSQL5.master.sys.databases<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;'%'+@dbName+'%'<br />UNION<br />SELECT&nbsp;'SCHPSQL6',&nbsp;*<br />FROM&nbsp;SCHPSQL6.master.sys.databases<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;'%'+@dbName+'%'<br />UNION<br />SELECT&nbsp;'SCHPSQL9',&nbsp;*<br />FROM&nbsp;SCHPSQL9.master.sys.databases<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;'%'+@dbName+'%'<br /><br />/*<br />SELECT&nbsp;*&nbsp;FROM&nbsp;#serverDB<br />*/<br /><br />DECLARE&nbsp;@query&nbsp;NVARCHAR(MAX)&nbsp;=&nbsp;''<br />SELECT&nbsp;@query&nbsp;=&nbsp;<br />	(CONCAT(@query,'<br />	SELECT&nbsp;''',name,'''&nbsp;AS&nbsp;dbName,&nbsp;''',serverName,'''&nbsp;AS&nbsp;serverName,&nbsp;*&nbsp;<br />	FROM&nbsp;',QUOTENAME(serverName),'.',QUOTENAME(name),'.dbo.DataReportDetails<br />	')<br />	)&nbsp;FROM&nbsp;#serverDB&nbsp;c<br />	WHERE&nbsp;serverName&nbsp;<>&nbsp;'SCHDETLB'<br /><br />PRINT&nbsp;@query<br />EXEC&nbsp;sp_executesql&nbsp;@query<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">DE</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DELETE&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">DI</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DISTINCT&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">disablejob</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXEC&nbsp;msdb.dbo.sp_update_job&nbsp;@job_name&nbsp;=&nbsp;'GVSI_{C}',&nbsp;@enabled&nbsp;=&nbsp;0
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">DRD</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*<br />FROM&nbsp;dbo.DataReportDetails<br /><br />UPDATE&nbsp;dbo.DataReportDetails<br />SET&nbsp;DataExpected&nbsp;=&nbsp;10000<br />WHERE&nbsp;DataReport&nbsp;<>&nbsp;'Metadata'
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">DT</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DROP&nbsp;TABLE&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">DTIE</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DROP&nbsp;TABLE&nbsp;IF&nbsp;EXISTS&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">E</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXEC&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">enablejob</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXEC&nbsp;msdb.dbo.sp_update_job&nbsp;@job_name&nbsp;=&nbsp;'GVSI_{C}',&nbsp;@enabled&nbsp;=&nbsp;1
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">ESC</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				[^{C}]
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">EX</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXISTS&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">EX</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXECUTE&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">F</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				FROM&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">findjob</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*&nbsp;FROM&nbsp;msdb.dbo.sysjobs&nbsp;WHERE&nbsp;name&nbsp;LIKE&nbsp;'%{C}%'
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">findserver</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				<br />;WITH&nbsp;CTE&nbsp;AS&nbsp;(<br />	SELECT&nbsp;'%{C}%'&nbsp;AS&nbsp;dbName<br />	)<br />SELECT&nbsp;'SCHPSQL3',&nbsp;*<br />FROM&nbsp;SCHPSQL3.master.sys.databases&nbsp;d<br />JOIN&nbsp;CTE&nbsp;c&nbsp;ON&nbsp;d.name&nbsp;LIKE&nbsp;c.dbName<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;dbName<br />UNION<br />SELECT&nbsp;'SCHPSQL4',&nbsp;*<br />FROM&nbsp;SCHPSQL4.master.sys.databases&nbsp;d<br />JOIN&nbsp;CTE&nbsp;c&nbsp;ON&nbsp;d.name&nbsp;LIKE&nbsp;c.dbName<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;dbName<br />UNION<br />SELECT&nbsp;'SCHPSQL5',&nbsp;*<br />FROM&nbsp;SCHPSQL5.master.sys.databases&nbsp;d<br />JOIN&nbsp;CTE&nbsp;c&nbsp;ON&nbsp;d.name&nbsp;LIKE&nbsp;c.dbName<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;dbName<br />UNION<br />SELECT&nbsp;'SCHPSQL6',&nbsp;*<br />FROM&nbsp;SCHPSQL6.master.sys.databases&nbsp;d<br />JOIN&nbsp;CTE&nbsp;c&nbsp;ON&nbsp;d.name&nbsp;LIKE&nbsp;c.dbName<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;dbName<br />UNION<br />SELECT&nbsp;'SCHPSQL9',&nbsp;*<br />FROM&nbsp;SCHPSQL9.master.sys.databases&nbsp;d<br />JOIN&nbsp;CTE&nbsp;c&nbsp;ON&nbsp;d.name&nbsp;LIKE&nbsp;c.dbName<br />WHERE&nbsp;name&nbsp;LIKE&nbsp;dbName<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">FINDSYMBOL</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				USE&nbsp;[MVProdPerm2]<br />GO&nbsp;<br /><br />DECLARE<br /><br />	@symbol			VARCHAR(200)&nbsp;=&nbsp;'#{C}',&nbsp;&nbsp;/***&nbsp;<----&nbsp;This&nbsp;is&nbsp;the&nbsp;only&nbsp;value&nbsp;you&nbsp;need&nbsp;to&nbsp;modify.&nbsp;&nbsp;&nbsp;***/<br />	@database		VARCHAR(200),<br />	@exchangeCode	VARCHAR(200)&nbsp;<br />	<br />BEGIN<br />	SELECT&nbsp;*<br />	FROM&nbsp;[MVProdPerm2].[dbo].[SYMBOL]<br />	WHERE&nbsp;SYMBOL&nbsp;=&nbsp;@symbol<br /><br />	SELECT&nbsp;@database&nbsp;=&nbsp;dbName,&nbsp;@exchangeCode&nbsp;=&nbsp;EXCHANGE_CODE<br />	FROM&nbsp;[MVProdPerm2].[dbo].[SYMBOL]<br />	WHERE&nbsp;SYMBOL&nbsp;=&nbsp;@symbol<br /><br />	SELECT&nbsp;@database,&nbsp;@exchangeCode<br /><br />	<br />	IF&nbsp;@database&nbsp;IS&nbsp;NULL&nbsp;AND&nbsp;@exchangeCode&nbsp;IS&nbsp;NOT&nbsp;NULL<br />	BEGIN<br />		SELECT&nbsp;@database&nbsp;=&nbsp;ETL_SOURCE<br />		FROM&nbsp;dbo.EXCHANGE<br />		WHERE&nbsp;EXCHANGE_CODE&nbsp;=&nbsp;@exchangeCode<br />	END<br />	IF&nbsp;@database&nbsp;IS&nbsp;NOT&nbsp;NULL<br />	BEGIN<br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHTMD01].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHTMD01'&nbsp;AS&nbsp;[Exists&nbsp;On]<br />	<br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL3].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL3'&nbsp;AS&nbsp;[Exists&nbsp;On]<br /><br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL4].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL4'&nbsp;AS&nbsp;[Exists&nbsp;On]<br /><br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL5].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL5'&nbsp;AS&nbsp;[Exists&nbsp;On]<br /><br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL6].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL6'&nbsp;AS&nbsp;[Exists&nbsp;On]<br /><br />		--IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL7].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />		--	SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL7'&nbsp;AS&nbsp;[Exists&nbsp;On]<br />	<br />		--IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL8].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />		--	SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL8'&nbsp;AS&nbsp;[Exists&nbsp;On]<br /><br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL9].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL9'&nbsp;AS&nbsp;[Exists&nbsp;On]<br /><br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL11].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL11'&nbsp;AS&nbsp;[Exists&nbsp;On]<br /><br />		IF&nbsp;(SELECT&nbsp;COUNT(*)&nbsp;FROM&nbsp;[SCHPSQL12].[master].[sys].[databases]&nbsp;WHERE&nbsp;[name]&nbsp;=&nbsp;@database)&nbsp;>&nbsp;0<br />			SELECT&nbsp;@database&nbsp;AS&nbsp;[Database],&nbsp;'SCHPSQL12'&nbsp;AS&nbsp;[Exists&nbsp;On]<br />	END<br />	ELSE<br />		SELECT&nbsp;'Database&nbsp;name&nbsp;is&nbsp;NULL'&nbsp;AS&nbsp;[Error]<br /><br />END<br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">FJ</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				FULL&nbsp;JOIN
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">GB</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				GROUP&nbsp;BY&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">gdmxtest</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				INSERT&nbsp;INTO&nbsp;GDMXMetadata&nbsp;(<br />	dataset,<br />	MVSYMBOL,<br />	MODELCD,<br />	DEFAULT_PROFILE,<br />	DEFAULT_VERSION,<br />	DateCreated,<br />	CATEGORY,<br />	COMMODITY,<br />	DELIVERYCD,<br />	GDMX_PREFIX<br />	)<br />SELECT&nbsp;<br />	'test',<br />	'#CCIAPIBAHS',<br />	'test',<br />	'test',<br />	'test',<br />	GETUTCDATE(),<br />	'test',<br />	'test',<br />	'test',<br />	'test'<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">HA</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				HAVING&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">HERENUPDATEDATAUSED</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				UPDATE<br />	C<br />SET<br />	C.newData&nbsp;=&nbsp;1,<br />	C.dateUpdated&nbsp;=&nbsp;GETDATE(),<br />	C.value&nbsp;=&nbsp;CONVERT(FLOAT,A.value),<br />	C.dataused&nbsp;=&nbsp;A.dataUsed<br />FROM<br />	Forwards_Stage&nbsp;A<br />INNER&nbsp;JOIN<br />	Forwards_Metadata&nbsp;B<br />ON<br />	A.code&nbsp;=&nbsp;B.code<br />INNER&nbsp;JOIN<br />	Forwards_History&nbsp;C<br />ON<br />	C.symbolID&nbsp;=&nbsp;B.symbolID<br />AND<br />	C.tradeDate&nbsp;=&nbsp;A.tradeDate<br />WHERE<br />	CONVERT(FLOAT,A.value)&nbsp;<>&nbsp;C.value<br />	OR&nbsp;(A.dataUsed&nbsp;IS&nbsp;NOT&nbsp;NULL&nbsp;AND&nbsp;A.dataUsed&nbsp;<>&nbsp;''&nbsp;AND&nbsp;C.dataUsed&nbsp;IS&nbsp;NULL)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">IN</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				INSERT&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">INI</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				INSERT&nbsp;INTO&nbsp;dbo.
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">INS</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				INSERT&nbsp;INTO&nbsp;<>()<br />VALUES&nbsp;(<>)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">JO</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				JOIN&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">LJ</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				LEFT&nbsp;JOIN
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">LW</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				LIKE&nbsp;'%{C}%'
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">NEX</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				NOT&nbsp;EXISTS&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">OA</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				OUTER&nbsp;APPLY&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">OB</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				ORDER&nbsp;BY&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">openquery</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DROP&nbsp;TABLE&nbsp;IF&nbsp;EXISTS&nbsp;#Temp&nbsp;<br />SELECT&nbsp;*<br />INTO&nbsp;#Temp&nbsp;<br />FROM&nbsp;OPENQUERY(SCHPSQL4,&nbsp;'EXEC&nbsp;DBName.dbo.ProcedureName&nbsp;@args&nbsp;=&nbsp;value')
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">recentdays</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				DATEDIFF(DAY,GETDATE(),tradeDate)&nbsp;<&nbsp;10{C}
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">reporttableentry</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				INSERT&nbsp;INTO&nbsp;GLOBAL.dbo.Report&nbsp;(ReportName,&nbsp;To_EmailAddresses,&nbsp;From_EmailAddresses,&nbsp;From_Name,&nbsp;[Subject],&nbsp;ReplyTo_EmailAddresses,&nbsp;[Priority],&nbsp;EmailType,&nbsp;[Server],&nbsp;ReportType)<br />VALUES&nbsp;('{your&nbsp;report&nbsp;name&nbsp;from&nbsp;email&nbsp;proc}',&nbsp;'{your&nbsp;personal&nbsp;company&nbsp;email&nbsp;address}',&nbsp;'DL-DataServices',&nbsp;'GVSI&nbsp;Data&nbsp;Factory',&nbsp;'{email&nbsp;subject&nbsp;line,&nbsp;usually&nbsp;database&nbsp;name&nbsp;or&nbsp;description}',&nbsp;'DL-DataServices@gvsi.com',&nbsp;'Normal',&nbsp;'TextPlain',&nbsp;'mail.gvsi.com',&nbsp;1)<br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">RIGDATA</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				USE&nbsp;[RigData]<br />GO<br /><br />&nbsp;select&nbsp;*&nbsp;from&nbsp;Operator_Xref&nbsp;WHERE&nbsp;Operator_Name&nbsp;is&nbsp;null<br /><br />select&nbsp;*&nbsp;from&nbsp;Operator_Xref&nbsp;WHERE&nbsp;Operator&nbsp;LIKE&nbsp;'%%'<br /><br /><br /><br />UPDATE&nbsp;dbo.Operator_Xref<br />SET&nbsp;Operator_Name&nbsp;=&nbsp;''<br />WHERE&nbsp;Operator_Name&nbsp;IS&nbsp;NULL&nbsp;AND&nbsp;Operator&nbsp;=&nbsp;''<br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">RJ</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				RIGHT&nbsp;JOIN&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">RWN</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				ROW_NUMBER()&nbsp;OVER(PARTITION&nbsp;BY&nbsp;<>&nbsp;ORDER&nbsp;BY&nbsp;<>&nbsp;)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">S</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SDDFH</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;DISTINCT&nbsp;dateCreated<br />FROM&nbsp;dbo.History<br />ORDER&nbsp;BY&nbsp;dateCreated&nbsp;DESC<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SDF</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;DISTINCT&nbsp;<br />FROM&nbsp;	dbo.{C}<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SPREN</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXEC&nbsp;sp_rename&nbsp;'{C}',&nbsp;''
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SSC</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;&nbsp;COUNT(*)<br />FROM&nbsp;&nbsp;&nbsp;&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SSF</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*<br />FROM&nbsp;<br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SSFD</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*&nbsp;<br />FROM&nbsp;DSPerms.dbo.{C}&nbsp;WITH&nbsp;(NOLOCK)<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SSFDRD</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*<br />FROM&nbsp;dbo.DataReportDetails
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SSFG</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*<br />FROM&nbsp;GLOBAL.dbo.{C}&nbsp;WITH&nbsp;(NOLOCK)<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SSFHD</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*<br />FROM&nbsp;dbo.history<br />ORDER&nbsp;BY&nbsp;dateCreated&nbsp;DESC<br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SSFHJM</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;*<br />FROM&nbsp;dbo.history&nbsp;h<br />JOIN&nbsp;MetaData&nbsp;m<br />ON&nbsp;h.symbolID&nbsp;=&nbsp;m.symbolID<br />ORDER&nbsp;BY&nbsp;h.dateCreated&nbsp;DESC<br /><br />
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">SST</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;&nbsp;TOP&nbsp;10&nbsp;*<br />FROM&nbsp;&nbsp;&nbsp;&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">startjob</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXEC&nbsp;msdb.dbo.sp_start_job&nbsp;@job_name&nbsp;=&nbsp;'GVSI_{C}'
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">stopjob</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				EXEC&nbsp;msdb.dbo.sp_stop_job&nbsp;@job_name&nbsp;=&nbsp;'GVSI_{C}'
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">STSF</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				SELECT&nbsp;TOP&nbsp;10000&nbsp;*<br />FROM&nbsp;dbo.{C}
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">TT</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				TRUNCATE&nbsp;TABLE&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">UP</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				UPDATE&nbsp;dbo.
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">UPD</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				UPDATE<br />SET&nbsp;<br />FROM
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">W</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				WHERE&nbsp;
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">WNL</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				WITH&nbsp;(NOLOCK)
+			</div></td>
+		</tr><tr>
+			<td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;">WTF</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;color:#006400;">True</td><td style="border-top-width:2px;border-top-style:solid;border-top-color:black;padding-top:10px;padding-right:5px;padding-left:10px;font-family:courier new;word-wrap:break-word;"><div>
+				WTF???!??!&nbsp;&nbsp;AAAAAARRRRRRRRRRGGGGGGGGHHHHHHHHHHHHHHHHHHH!!!!!!!!!!!!!!!!!!
+			</div></td>
+		</tr>
+	</table>
+</html>
