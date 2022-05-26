@@ -1,0 +1,16 @@
+DROP TABLE IF EXISTS #Temp
+SELECT 0 AS thing1, 0 AS thing2, 1 AS thing3, 0 AS thing4
+INTO #Temp
+
+SELECT * FROM #Temp
+
+SELECT 
+  (SELECT MAX(v) 
+   FROM (VALUES 
+			((SELECT thing1 FROM #Temp)), 
+			((SELECT thing2 FROM #Temp)),
+			((SELECT thing3 FROM #Temp)),
+			((SELECT thing4 FROM #Temp))
+		)
+		AS value(v)) as [Maxthing]
+FROM #Temp
