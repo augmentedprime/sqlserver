@@ -1,0 +1,23 @@
+DECLARE @tblVariable TABLE(
+	SPID INT, Status VARCHAR(200), 
+	[Login] VARCHAR(200), 
+	HostName VARCHAR(200), 
+	BlkBy VARCHAR(200), 
+	DBName VARCHAR(200), 
+	Command VARCHAR(200), 
+	CPUTime INT, 
+	DiskIO INT, 
+	LastBatch VARCHAR(200), 
+	ProgramName VARCHAR(200), 
+	_SPID INT, 
+	RequestID INT)
+
+INSERT INTO @tblVariable EXEC master.dbo.sp_who2
+
+SELECT V.*, T.TEXT--, SP.*
+FROM @tblVariable v
+INNER JOIN sys.sysprocesses SP ON SP.spid = V.SPID
+CROSS APPLY sys.dm_exec_sql_text(SP.sql_handle) AS t
+ORDER BY BlkBy DESC, CPUTime DESC
+
+KILL --SPID
